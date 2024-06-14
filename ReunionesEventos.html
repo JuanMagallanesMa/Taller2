@@ -9,9 +9,95 @@
     <title> Taller 1 Hotel Andy Reuniones/Eventos </title>
 </head>
 
+<style>
+header{
+    background-color:bisque;
+}
+
+body{
+    background-color: linen;
+}
+
+li{
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+  
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #030303;
+    background-color:#0cf06b;
+}
+
+th, td {
+    border: 1px solid #000;
+}
+
+th {
+    background:#00698f;
+    color: white;
+}
+
+td {
+    background-color:aliceblue;
+}
+
+
+* {  /*Selector universal*/
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #00698f;    
+  }
+
+a {
+    padding: 2px;
+    border: 1px solid #030303;
+}
+
+.clase1{   /*Selector clase*/
+    color: #8F00FF;
+    font-size: 25px;
+}
+
+.clase2{   /*Selector clase*/
+    color: #8F00FF;
+    font-size: 25px;
+}
+
+.clase3 {   /*Selector clase*/
+    color: #8F00FF;
+    font-size: 25px;
+}
+
+#Selector {   /*Elemento de bloque por id*/
+    text-align: center;
+    text-decoration: underline;
+    color:#8B0000;
+    font-size: 35px;
+}
+
+span {   /*Elemento en linea*/
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #00d3f8;
+}
+   
+.combinador li{   /*Combinador de descendientes*/
+  color: #000080;
+}
+
+img[src*="png"]{  /*Selector de atributos para las imagenes*/
+    width: 300px; 
+    height: 200px;
+    border-radius: 50%;
+}
+</style>
+
 <body>
     <header>
-        <h1> Hotel Andy - Reuniones y eventos </h1>
+        <h1 id="Selector"> Hotel Andy - Reuniones y eventos </h1>
     </header>
     
     <nav>
@@ -29,58 +115,66 @@
             Ofreciendo un amplio espacio de lugares versátiles, hacemos un esfuerzo adicional al brindar servicios de catering y soporte audiovisual de vanguardia, garantizando que su evento 
             sea nada menos que excepcional. </p>
 
-        <h2> Ocasiones </h2>
-            <li> Bodas </li>
-            <li> Aniversarios </li>
-            <li> Reuniones </li>
-            <li> Cumpleaños </li>
-            <li> Showers </li>
-            <li> Bar/Bat Mitzvahs </li>
-            <li> Fiestas corporativas </li>
-        
-            <br>
+        <h2 class="clase1"> Ocasiones </h2>
+           <ul class="combinador">
+                <li> Bodas </li>
+                <li> Aniversarios </li>
+                <li> Reuniones </li>
+                <li> Cumpleaños </li>
+                <li> Showers </li>
+                <li> Bar/Bat Mitzvahs </li>
+                <li> Fiestas corporativas </li>
+           </ul> 
+             
+        <br>
 
-            <table border="1">
-            <tr>
-              <th> Habitaciones Meadowlands </th>
-              <th> Sala de juntas Hudson</th>
-              <th> Habitacion Bergen </th>
+        <table>
+        <tr>
+            <th> Habitaciones Meadowlands </th>
+            <th> Sala de juntas Hudson</th>
+            <th> Habitacion Bergen </th>
+        </tr>
+        <tr>
+            <td> <img src="img/habitaciones_meadowlands.png" alt="Habitaciones Meadowlands" /> </td>
+            <td> <img src="img/sala_de_juntas_hudson.png" alt="Sala de juntas Hudson" /> </td>
+            <td> <img src="img/habitacion_Bergen.png" alt="Habitacion Bergen" /> </td>
+        </tr>
+        <tr>
+            <td> <img src="img/habitaciones_meadowlands2.png" alt="Habitaciones Meadowlands" /> </td>
+            <td> <img src="img/sala_de_juntas_hudson2.png" alt="Sala de juntas Hudson" /> </td>
+            <td> <img src="img/habitacion_Bergen2.png" alt="Habitacion Bergen" /> </td>
             </tr>
-            <tr>
-              <td> <img src="img/habitaciones_meadowlands.png" alt="Habitaciones Meadowlands" /> </td>
-              <td> <img src="img/sala_de_juntas_hudson.png" alt="Sala de juntas Hudson" /> </td>
-              <td> <img src="img/habitacion_Bergen.png" alt="Habitacion Bergen" /> </td>
-            </tr>
-            <tr>
-              <td> <img src="img/habitaciones_meadowlands2.png" alt="Habitaciones Meadowlands" /> </td>
-              <td> <img src="img/sala_de_juntas_hudson2.png" alt="Sala de juntas Hudson" /> </td>
-              <td> <img src="img/habitacion_Bergen2.png" alt="Habitacion Bergen" /> </td>
-              </tr>
-          </table>
+        </table>
 
-          <article>
-            <header>
-                <h2>Reserva de Habitaciones para reuniones y eventos</h2>
-                <p>Más allá de nuestros servicios de eventos, los huéspedes disfrutarán de una gran variedad de habitaciones y amenidades durante su estadía. Restaurantes, Bar 
-                    y una piscina al aire libre así como el Wi-Fi complementario son solo algunos de nuestros numerosos beneficios.</p>
-                <iframe src="https://www.youtube.com/embed/7xkYkFjTxg8?si=ccv3shqJ2EhyZose" title="YouTube video player" frameborder="0" 
+        <br>
+
+        <article>
+            <h2 class="clase2">Reserva de Habitaciones para reuniones y eventos</h2>
+            <p>Más allá de nuestros servicios de eventos, los huéspedes disfrutarán de una gran variedad de habitaciones y amenidades durante su estadía. Restaurantes, Bar 
+                y una piscina al aire libre así como el Wi-Fi complementario son solo algunos de nuestros numerosos beneficios.</p>
+            <div style="text-align:center;">
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/7xkYkFjTxg8?si=ccv3shqJ2EhyZose" title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
                 allowfullscreen></iframe>
-            </header>          
-          </article>
+            </div >         
+        </article>
+
+        <br>
           
-          <article>
-            <header>
-                <h2>Espacios</h2>
-                <p> Planifique sus recepciones de boda, conferencias y diversos eventos cómodamente en el Centro de Exposiciones Meadowlands , ubicado justo al lado. Este versátil 
-                    lugar para eventos cuenta con 20,000 pies cuadrados de espacio funcional, diseños adaptables y equipos audiovisuales de primer nivel para satisfacer sus necesidades
-                    específicas. </p>
-                <video controls>
+        <article>
+            <h2 class="clase3">Espacios</h2>
+            <p> Planifique sus recepciones de boda, conferencias y diversos eventos cómodamente en el Centro de Exposiciones Meadowlands , ubicado justo al lado. Este versátil 
+                lugar para eventos cuenta con 20,000 pies cuadrados de espacio funcional, diseños adaptables y equipos audiovisuales de primer nivel para satisfacer sus necesidades
+                específicas. </p>
+            <center>
+                <video width="700" height="500" controls>
                     <source src="video/EventosReunionesHotel.mp4" type="video/mp4">
                 </video>
-            </header>
-          </article>
-          <br>
+            </center>
+        </article>
+
+        <br>
+
     </main>
 </body>
 
