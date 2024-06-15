@@ -7,14 +7,87 @@
     <meta name="author" content="Juan Magallanes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller 1 Hotel Andy</title>
-    <style>
-        
-    </style>
-
 </head>
+
+<style>
+    /* Punto 1. Selector universal*/
+    *{
+        font-family:Cambria;
+        font-style: italic;
+        color: #002150;
+        font-size: 18px;
+     }
+     /*Punto 2*/
+     a {
+        padding: 10px;
+        border: 1px solid #002150 ;
+     }
+     /*Punto 3*/
+     .titulos{
+        font-size: 20px;
+        color: 
+     }
+     /*Punto 4*/
+    #TituloPrincipal{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 28px;
+    }
+    /*Punto 5*/
+    span{
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    /*Punto 6*/
+    nav a{
+        font-size: 23px;
+        background-color: bisque;
+        padding: 5px;
+        
+    }
+    /*Punto 7*/
+    img[src*="jpeg"] {
+            width: 200px;
+            height: 200px; 
+            border-radius: 50%;
+    }
+    /*Mas estilos*/
+    body{
+        background-color: linen;
+    }
+    table, tr, td, th{
+        text-align: center;
+        padding: 5px;
+       
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table td{
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(243, 194, 178);
+    }
+    .videos{
+        width:500px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+    footer{
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        font-size: 25px;
+        text-align: center;
+    }
+</style>
 <body>
     <header>
-        <h1>Hotel Andy - Atracciones</h1>
+        <h1 id="TituloPrincipal">Hotel Andy - Atracciones</h1>
         <nav>
             <a href="Index.html">Home</a> |
             <a href="HabitacionesYSuits.html">Habitaciones y suites</a> |
@@ -32,12 +105,12 @@
             centro de Guayaquil, a solo pasos de la vibrante vida urbana y atracciones emblemáticas.<br>
             Podra disfrutar de diferentes lugares turisticos y de entretenimiento nocturno.
         </p>
-        <video controls muted> 
+        <video class="videos" controls muted> 
             <source src="video/videopromocional.mp4" type="video/mp4">
         </video>
        </article> 
        <section>
-            <h2>Atracciones cercanas</h2>
+            <h2 class="titulos">Atracciones cercanas</h2>
             <table border="1">
                 <tr>
                     <td>Imagen referencial</td>
@@ -45,7 +118,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <img src="img/malecon.jpeg" alt="Malecon 2000">
+                        <img src="img/malecon.jpeg" alt="Malecon 2000" >
                     </th>
                     <th> Malecon 2000</th>
                 </tr>
@@ -59,26 +132,26 @@
        </section>
        
        <article>
-        <h3>Malecon 2000</h3>
+        <h3 class="titulos">Malecon 2000</h3>
         <p>
             Podra recorrer el Malecon 2000 que esta ubicado a unas pocas cuadras.
             El Malecón 2000 es más que un simple paseo marítimo, es un símbolo de Guayaquil y
             un testimonio de su historia y evolución. Este lugar marcó el origen de la ciudad, desde este punto se
             extendió el progreso urbano y desempeñó un rol fundamental en su evolución y enriquecimiento estético.
         </p>
-        <iframe 
+        <iframe class="videos"
         src="https://www.youtube.com/embed/L5RT6XCVf_I?si=0NC3tRsT1naJnj_q">
         </iframe>
        </article>
        <article>
-        <h3>Barrio las Peñas</h3>
+        <h3 class="titulos">Barrio las Peñas</h3>
         <p>
             El barrio Las Peñas es un lugar emblemático de la ciudad de Guayaquil, Ecuador. <br>
             Es reconocido por su estilo arquitectónico colonial y es el lugar donde nació la ciudad. <br>
             Se encuentra ubicado en las faldas del Cerro Santa Ana, y su nombre se debe a la cantidad de <br>
             peñascos que poseía el cerro cuando los españoles se asentaron allí en el siglo XVI.
         </p>
-        <iframe 
+        <iframe class="videos" 
         src="https://www.youtube.com/embed/uyl_wKyrGjo?si=z6fSMirzgi3zoj1U">
         </iframe>
        </article>
