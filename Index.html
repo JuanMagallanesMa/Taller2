@@ -7,47 +7,50 @@
     <meta name="author" content="Miguel Loor Vera">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Andy</title>
+
+    <style>
+        body{
+            background-color: rgba(60, 8, 109, 0.773);
+        }
+
+        *{
+            color: white;
+            font-style: italic;
+        }
+
+        nav{
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        .titulo .txt{
+            color: blue;
+            font-size: 20px;
+        }
+
+        #bloque{
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .txt{
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        
+        h2 + p{
+            font-size: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px; 
+            border-radius: 50%;
+        }
+    </style>
+
+
 </head>
-<style>
-    body{
-        background-color: linen;
-    }
-
-    *{
-        color: #002150;
-        font-style: italic;
-    }
-
-    nav{
-        border: 1px solid black;
-        padding: 15px;
-    }
-
-    .titulo .txt{
-        color: blue;
-        font-size: 20px;
-    }
-
-    #bloque{
-        text-align: center;
-        text-decoration: underline;
-    }
-
-    .txt{
-        font-weight: bold;
-        text-transform: capitalize;
-    }
-    
-    h2 + p{
-        font-size: 20px;
-    }
-
-    img {
-        width: 200px;
-        height: 200px; 
-        border-radius: 50%;
-    }
-</style>
 <body>
     <header>
         <h1>Hotel Andy</h1>
@@ -79,9 +82,9 @@
         </table>
     </header>
 
-    <section>
-        <h2>Bienvenido al Hotel Andy</h2>
-        <p>Si te hospedas en Andy Hotel, estarás a tan solo 10 minutos en auto de SM City Cebu y de Casino Waterfront Cebu City. Los huéspedes que deseen comer algo rico pueden visitar Mang Cape, que ofrece cocina filipina y abre sus puertas para el desayuno, el almuerzo y la cena. Además, Cruz de Magallanes y Calle Colón se encuentran a unos pocos minutos en auto.</p>
+    <section id="bloque">
+        <h2 class="titulo">Bienvenido al Hotel Andy</h2>
+        <p class="txt">Si te hospedas en Andy Hotel, estarás a tan solo 10 minutos en auto de SM City Cebu y de Casino Waterfront Cebu City. Los huéspedes que deseen comer algo rico pueden visitar Mang Cape, que ofrece cocina filipina y abre sus puertas para el desayuno, el almuerzo y la cena. Además, Cruz de Magallanes y Calle Colón se encuentran a unos pocos minutos en auto.</p>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2MXC2qwj7U" frameborder="0" allowfullscreen></iframe>
 
