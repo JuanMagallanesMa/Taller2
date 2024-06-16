@@ -7,41 +7,112 @@
     <meta name="author" content="Gregory Huacon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller 1 Hotel Andy</title>
-
-
 </head>    
+<style>
+    /*punto 1(usado)*/
+*{   
+font-style: italic;
+font-size: 18px;
+color: #045979;
+}
+
+/* punto 2(Usado)*/
+a{
+    padding: 1px;
+    border: 1px solid #ca2626;
+}
+/* punto 3 clase selector(Usado)*/
+.clase{
+    color: rgb(23, 61, 36);
+    font-size: 25px;
+}
+/*punto 4(usado)*/
+#TITULOS{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+/*punto 5*(usado)/
+span{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/*punto 6(Usado)*/
+nav a{
+
+    font-size: 20px;
+    background-color: rgb(224, 204, 21);
+    padding: 5px;
+}
+/*punto 7(usado)*/
+img[src*="images"]{
+
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/*Pagina estilos*/
+header{
+background-color: rgb(179, 236, 236);
+}
+
+body{
+    background-color: rgb(184, 114, 184);
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px rgb(26, 25, 25);
+    background-color: rgb(109, 81, 160);
+}
+th,td{
+    border: 1px rgb(29, 27, 27);
+}
+
+th{
+    background: rgb(190, 190, 50);
+    border: #8a3434;
+}
+td{
+    background-color: rgb(74, 129, 177);
+}
+</style>
+
+
 <body>
     <header> 
-        <h1> Hotel Andy - Habitaciones y Suites</h1> 
+        <h1 id="TITULOS"> Habitaciones y Suites</h1> 
     </header>
         <nav>
-            <a href="Index.html">Home</a> |
-            <a href="HabitacionesYSuits.html">Habitaciones y suites</a> |
-            <a href="ReunionesEventos.html">Reuniones y eventos</a> |
-            <a href="Atracciones.html">Atracciones</a> |
-            <a href="Restaurante.html">Comida</a> |
-            <a href="SobreNosotros.html">Sobre nosotros</a> |
+        <a href="index.html">Home</a> |
+        <a href="index.html">Habitaciones y suites</a> |
+        <a href="ReunionesEventos.html">Reuniones y eventos</a> |
+        <a href="index.html">Atracciones</a> |
+        <a href="Restaurante.html">Comida</a> |
+        <a href="SobreNosotros.html">Sobre nosotros</a> |
         </nav>
 
 <main>
 <p>
 Sumérgete en el lujo y la comodidad de nuestras exquisitas habitaciones y suites, donde cada detalle ha sido cuidadosamente diseñado para brindarte una experiencia de descanso y relajación sin igual.
 </p>
-<h2>Habitaciones</h2>
+<center><h1 class="clase">Sobre las Habitaciones</h1></center>
 <p>
 Entra en nuestra habitación de hotel impecablemente amueblada, donde el confort moderno se encuentra con la comodidad. Relájese con estilo con una cama acogedora y manténgase entretenido con una elegante TV que ofrece una variedad de canales. Para sus necesidades culinarias, hay un práctico microondas, un refrigerador conveniente y una cafetera a su servicio. ¿Necesitas ponerte al día con el trabajo? Siéntese en el espacio de trabajo dedicado con una silla cómoda y una amplia iluminación. Su comodidad es nuestra prioridad, y cada detalle ha sido cuidadosamente curado para garantizar una estancia encantadora.
 </p>
-<img src="img/Habitacion 1.jpg" width="350px">
-<h2>Eleve su Estancia con las Amenidades In-Room y la Limpieza en Seco Sin complicaciones</h2>
+<img src="images/Habitacion 1.jpg" width="350px">
+<h2 class="clase">Eleve su Estancia con las Amenidades In-Room y la Limpieza en Seco Sin complicaciones</h2>
 <p>
 Cuando elige quedarse con nosotros, no solo está reservando una habitación; está desbloqueando un mundo de conveniencia y comodidad. Nuestro compromiso de hacer que su estadía sea excepcional se extiende más allá de la ropa de cama cómoda y el servicio cortés. Weimos ha curado cuidadosamente una gama de comodidades en la habitación que satisfacen sus necesidades, asegurando que su estadía sea lo más agradable posible.
 </p>
 
 <br>
 
-<table border="1">
+<table>
 <tr>
-<th>Servicios de la habitacion</th>
+<th>Servivios de la habitacion</th>
 <th>¿Que ofrece?</th>
 <th> Imagen referencial</th>
 </tr>
@@ -50,31 +121,31 @@ Cuando elige quedarse con nosotros, no solo está reservando una habitación; es
     <td>Refrigerador</td>
     <td> Mantenga sus bebidas refrigeradas y almacene sus bocadillos favoritos para los antojos nocturnos. No es necesario salir a tomar una bebida fría o preocuparse por el deterioro de los alimentos.
     </td>
-    <td> <img src="img/refrigerador.jpg"width="100px"></td>
+    <td> <img src="images/refrigerador.jpg"width="100px"></td>
 </tr>
 
 <tr>
     <td>Microondas</td>
     <td> Calienta las sobras o disfruta de una comida rápida sin salir de la comodidad de tu habitación. Es perfecto para calentar sus comidas reconfortantes favoritas.
     </td>
-    <td><img src="img/microondas.jpeg"width="100px"></td>
+    <td><img src="images/microondas.jpeg"width="100px"></td>
 </tr>
 
 <tr>
     <td>Cafetera</td>
     <td> Comience el día con una taza de café o té recién hecho. Disfrute de la comodidad de hacer su cerveza matutina sin tener que salir de su habitación.
     </td>
-    <td> <img src="img/cafetera.jpeg"width="100px"></td>
+    <td> <img src="images/cafetera.jpeg"width="100px"></td>
 </tr>
 
 </table>
 
-<center><h1>Habitaciones</h1></center>
+<center><h1 class="clase">Habitaciones</h1></center>
 <article>
-<h2>Dos Habitaciones King</h2>
+<h2 class="clase">Dos Habitaciones King</h2>
 <p>Gratifíquese con la privacidad y el amplio espacio de nuestras habitaciones Two King Bed, que cuentan con dos habitaciones distintas, cada una amueblada con una lujosa cama king-size. También puede disfrutar de una taza de café de cortesía mientras ve sus programas favoritos en uno de nuestros televisores LED premium. Esta suite garantiza que todos disfruten de la habitación que necesitan de una manera verdaderamente lujosa.</p>
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/7j3T-utS4Ds?si=a5E-qypX4JcBBPWb?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
-<h2>Suite Ejecutiva One King Bed</h2>
+<h2 class="clase">Suite Ejecutiva One King Bed</h2>
 <p>¡Diseñada pensando en el lujo, esta suite notablemente espaciosa y contemporánea ofrece una experiencia encantadora! La Suite Ejecutiva King cuenta con una cama king-size junto con un espacio de vida distinto y un área de comedor/conferencia, lo que garantiza la máxima comodidad. El sofá cama permite una estancia tranquila con capacidad para cuatro personas. También se incluye un Desayuno Buffet Americano de cortesía.</p>
 <center><video width="520" height="340" autoplay controls>
 <source src="video/Suit.mp4" type="video/mp4">
