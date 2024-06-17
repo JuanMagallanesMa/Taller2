@@ -8,9 +8,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller 1 Hotel Andy</title>
 </head>
+<style>
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f1d7ff;
+    color: #121211; /* Color de texto principal */
+}
+
+header, nav {
+    padding: 1em 0;
+    text-align: center;
+}
+
+header {
+    background: #a87bc7;
+    color: #ffffff; /* Color de texto de header */
+}
+
+nav {
+    background: #e0b0ff;
+    color: #080808; /* Color de texto de navegación */
+}
+
+nav a, footer a {
+    color: #010101;
+    text-decoration: none;
+    border: none;
+}
+
+main {
+    padding: 20px;
+    text-align: justify;
+    color: #141411; /* Color de texto principal */
+}
+
+main h2 {
+    color: #5f0250;
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #aa05f6; /* Color del borde de la tabla */
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background: #a87bc7;
+    color: #fffefc; /* Color de texto del footer */
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+* {
+    font-style: italic; /* Aplicar estilo itálico a todos los elementos */
+}
+
+a {
+    padding: 10px;
+    border: 2px solid #000;
+    text-decoration: none;
+}
+
+h2 + p {
+    color: #8e00e6;
+    font-size: 1.1em;
+}
+
+img[src] {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+video {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 auto;
+}
+
+.restaurant-name {
+    font-weight: bold;
+}
+
+.btn-ver-menu {
+    display: block;
+    margin: 0 auto;
+}
+
+.content-container {
+    text-align: center; /* Centrar contenido */
+}
+
+.content-container p {
+    margin-bottom: 20px; /* Espacio después del párrafo */
+}
+
+.content-container iframe {
+    display: block;
+    margin: 0 auto; /* Centrar el iframe */
+}
+</style>
 <body>
     <header>
-        <h1>Hotel Andy - Restaurantes</h1>
+        <h1>Restaurantes del Hotel Andy</h1>
     </header>
     <nav>
         <a href="Index.html">Home</a> |
@@ -22,10 +139,12 @@
     </nav>
 
     <main>
-        <p>Cenar cerca del Hotel Andy ofrece una deliciosa experiencia culinaria que complementa perfectamente la atmósfera serena de este idílico retiro. Ubicadas en medio de una exuberante vegetación y con vistas panorámicas, las opciones gastronómicas cercanas al Hotel Andy satisfacen una variedad de gustos y preferencias. Ya sea que esté saboreando platos frescos de origen local o deleitándose con la cocina internacional, los restaurantes cercanos prometen un viaje gastronómico que combina armoniosamente los sabores con la tranquilidad del entorno. Disfrutar de una comida cerca del Hotel Andy no se trata sólo de satisfacer tu paladar; Es un deleite sensorial que mejora su estancia en general, convirtiéndola en una experiencia memorable y armoniosa.</p>
+        <div class="content-container"> 
+         <p>Cenar cerca del Hotel Andy ofrece una deliciosa experiencia culinaria que complementa perfectamente la atmósfera serena de este idílico retiro. Ubicadas en medio de una exuberante vegetación y con vistas panorámicas, las opciones gastronómicas cercanas al Hotel Andy satisfacen una variedad de gustos y preferencias. Ya sea que esté saboreando platos frescos de origen local o deleitándose con la cocina internacional, los restaurantes cercanos prometen un viaje gastronómico que combina armoniosamente los sabores con la tranquilidad del entorno. Disfrutar de una comida cerca del Hotel Andy no se trata sólo de satisfacer tu paladar; Es un deleite sensorial que mejora su estancia en general, convirtiéndola en una experiencia memorable y armoniosa.</p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_YuaGh7tkD8?si=bsisQOZChWg3hXKF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/_YuaGh7tkD8?si=bsisQOZChWg3hXKF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+        </div>
         <section id="restaurant1">
             <article>
                 <h2>Restaurante 1: La Cocina Internacional</h2>
@@ -37,7 +156,7 @@
                 <p><a href="menus/menu1.pdf" target="_blank">Ver Menú</a></p>
                 <p><strong>Horario de Atención:</strong> 12:00 PM - 10:00 PM</p>
                 <video controls width="560" height="315">
-                    <source src="video/restaurante1.mp4" type="video/mp4"> 
+                    <source src="videos/restaurante1.mp4" type="video/mp4"> 
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </article>
@@ -53,7 +172,7 @@
                 <p><a href="menus/menu2.pdf" target="_blank">Ver Menú</a></p>
                 <p><strong>Horario de Atención:</strong> 10:00 AM - 8:00 PM</p>
                 <video controls width="560" height="315">
-                    <source src="video/restaurante2.mp4" type="video/mp4">
+                    <source src="videos/restaurante2.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </article>
@@ -69,7 +188,7 @@
                 <p><a href="menus/menu3.pdf" target="_blank">Ver Menú</a></p>
                 <p><strong>Horario de Atención:</strong> 1:00 PM - 11:00 PM</p>
                 <video controls width="560" height="315">
-                    <source src="video/restaurante3.mp4" type="video/mp4">
+                    <source src="videos/restaurante3.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </article>
@@ -85,7 +204,7 @@
                 <p><a href="menus/menu4.pdf" target="_blank">Ver Menú</a></p>
                 <p><strong>Horario de Atención:</strong> 11:00 AM - 10:00 PM</p>
                 <video controls width="560" height="315">
-                    <source src="video/restaurante4.mp4" type="video/mp4">
+                    <source src="videos/restaurante4.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </article>
@@ -101,7 +220,7 @@
                 <p><a href="menus/menu5.pdf" target="_blank">Ver Menú</a></p>
                 <p><strong>Horario de Atención:</strong> 9:00 AM - 7:00 PM</p>
                 <video controls width="560" height="315">
-                    <source src="video/restaurante5.mp4" type="video/mp4">
+                    <source src="videos/restaurante5.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </article>
@@ -109,15 +228,15 @@
         <section id="restaurant6">
             <article>
                 <h2>Restaurante 6: Dulces y Postres</h2>
-                <br>Una variedad de dulces y postres para satisfacer a los más golosos.</p>
-                Desde pasteles artesanales hasta helados caseros, tenemos algo para cada antojo.
+                <p>Una variedad de dulces y postres para satisfacer a los más golosos.</p>
+                <br>Desde pasteles artesanales hasta helados caseros, tenemos algo para cada antojo.
                 Disfruta de nuestras especialidades en un ambiente encantador y acogedor.
                 Ofrecemos una selección de bebidas calientes y frías para acompañar tus postres.
                 No olvides probar nuestra tarta de la casa, ¡es un deleite!</br>
                 <p><a href="menus/menu6.pdf" target="_blank">Ver Menú</a></p>
                 <p><strong>Horario de Atención:</strong> 10:00 AM - 8:00 PM</p>
                 <video controls width="560" height="315">
-                    <source src="video/restaurante6.mp4" type="video/mp4">
+                    <source src="videos/restaurante6.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </article>
@@ -125,7 +244,7 @@
         <section id="restaurant7">
             <article>
                 <h2>Restaurante 7: Comida Rápida Gourmet</h2>
-                <p>Disfruta de la comida rápida con un toque gourmet y de alta calidad.
+                <p>Disfruta de la comida rápida con un toque gourmet y de alta calidad.</p>
                 <br>Nuestro menú incluye hamburguesas, pizzas y tacos preparados con ingredientes frescos y de calidad.
                 Ideal para una comida rápida sin sacrificar el sabor ni la calidad.
                 Ofrecemos opciones para llevar y servicio a la habitación.
@@ -133,7 +252,7 @@
                 <p><a href="menus/menu7.pdf" target="_blank">Ver Menú</a></p>
                 <p><strong>Horario de Atención:</strong> 12:00 PM - 11:00 PM</p>
                 <video controls width="560" height="315">
-                    <source src="video/restaurante7.mp4" type="video/mp4">
+                    <source src="videos/restaurante7.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </article>
@@ -178,16 +297,14 @@
     </main>
     <footer>
         <address>
-            HotelAndy.com<br>
-            Ecuador <br>
-            Escrito por: Joffre Arriaga <br>
-            Correo Electrónico: <a href="mailto:address@ejemplo.com">Grupo6@gmail.com</a><br>           
-            Teléfono: 0999999999 <br>
+            Dirección del Hotel: Calle Ejemplo 123, Ciudad, País<br>
+            Teléfono: +123 456 7890<br>
+            Email: contacto@hotel.com
         </address>
-        <hr>
-            Nuestras <span>redes sociales</span> son: <br>
-            <a href="https://www.facebook.com/andyhotelgye/?locale=es_LA">Facebook Hotel</a> | 
-            <a href="https://www.instagram.com/andyhotelgye/?hl=es">Instagram Hotel</a> |    
+        <span>Redes Sociales:</span>
+        <a href="https://www.facebook.com/tu_pagina">Facebook</a>
+        <a href="https://www.twitter.com/tu_pagina">Twitter</a>
     </footer>
 </body>
 </html>
+
